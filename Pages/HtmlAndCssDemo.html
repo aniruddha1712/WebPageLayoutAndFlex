@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code-pen-Demo Flexbox</title>
+    <style>
+      body {padding: 2em;}
+
+      .headerContainer{
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        background: tomato;
+        font-weight: bold;
+        padding: 10px;
+      }
+      .footerContainer{
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        background: lightgreen;
+        font-weight: bold;
+        padding: 10px;
+      }
+      .mainContainer{
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+        font-weight: bold;
+      }
+      .article{
+        padding: 10px;
+        margin: 10px;
+        background: aqua;
+      }
+      .mainContentItem{
+        text-align: left;
+        background: deepskyblue;
+      }
+      .sideBarLeftItem{ background: gold;}
+      .sideBarRightItem{ background: hotpink;}
+      .sideBarItem{ flex: 1 0 0; border: 0px solid green;}
+      .center{ text-align: center;}
+
+      .mainContentItem{ flex: 3 0px;}
+      .sideBarLeftItem{order: 1;}
+      .mainContentItem{order: 2;}
+      .sideBarRightItem{ order: 3;}
+
+    </style>
+  </head>
+  <body>
+    <header class="headerContainer"><h1>HEADER - Sample FlexBox Example</h1></header>
+    <div class="mainContainer">
+      <section class="mainContentItem">
+        <article class="article">
+          <h2>Article 1:</h2>
+          We are living in times of big changes and are bombarded daily with bad news; stories that affect 
+          us and impact our hope of the goodness of mankind. We can get caught up in the wave of negativity 
+          the media showcases. It brings us an unconscious feeling of comfort when we think, “At least that didn’t 
+          happen to me, right?”
+        </article>
+        <article class="article">
+          <h2>Article 1:</h2>
+          You must understand the whole of life, not just one part of it. That is why you must read, 
+          that is why you must look at the skies, why you must sing, dance and write poems, and suffer,
+          and understand, for all that is life.
+          —KRISHNAMURTI
+        </article>
+        <article class="article">
+          <h2>Article 1:</h2>
+          किसी भी कार्य में उसका दुष्परिणाम ढूंढ लेता है। हर एक कठिन कार्य में भी एक अवसर ढूंढ लेता है।” ,
+          एक निराशावादी और आलसी व्यक्ति किसी भी सार्थक कार्य को नहीं कर पाता , 
+          क्योंकि उसे उस कार्य में कोई न कोई कमी और निराशा मिल जाती है। वही एक आशावादी व्यक्ति एक लगनशील व्यक्ति 
+          एक दुष्कर और कठिन कार्य में भी एक अवसर ढूंढ लेता है।
+        </article>
+      </section>
+      <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sideBar>
+      <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sideBar>
+    </div>
+    <footer class="footerContainer"><h4>Thank You!</h4></footer>
+  </body>
+</html>
